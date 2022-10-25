@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(0,0,84);
+  background: linear-gradient(90deg, rgba(0,0,84,0.6166841736694677) 36%, rgba(105,10,227,0.7847514005602241) 65%);
+
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ------------------------- Footer -------------------------------------- */
+
+.footer.p-10.bg-neutral.text-neutral-content{
+  margin-top: 370px;
+  background: rgb(0,0,84);
+  background: linear-gradient(90deg, rgba(0,0,84,0.6166841736694677) 36%, rgba(177,10,227,0.7847514005602241) 65%);
+}
+
+
+/* ------------------------- Cards -------------------------------------- */
+
+.card.w-96.glass{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  width: 50%;
+}
+
+/* ------------------------- Botones -------------------------------------- */
+
+.btn.glass{
+  display: flex;
+  margin: auto;
+}
+
+/* ------------------------- Texto -------------------------------------- */
+
+.center{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.cart{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.price{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.name{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.description{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* ------------------------- Imagenes -------------------------------------- */
+
+.imageDetail{
+  margin: auto;
+  text-align: center; 
+}
+
+/* ------------------------- NavBhar -------------------------------------- */
+
+
+.navbar.bg-base-100{
+  background: rgb(3,6,140);
+  background: linear-gradient(90deg, rgba(3,6,140,0.36458333333333337) 36%, rgba(41,11,173,0.6502976190476191) 60%);
 }
