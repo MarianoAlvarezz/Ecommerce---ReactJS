@@ -8,16 +8,15 @@ export const Card = ( {id, name, price, img} ) => {
     return (
         <Link to={`/detail/${id}`}>
 <div class="card w-96 glass">
-    <figure>            <img src={img} height={200}/></figure>
+    <figure> <img src={img} height={200}/></figure>
     <div class="card-body">
     <div>{name}</div>
     <div>{price}</div>
         <div class="card-actions justify-end">
-        <button class="btn btn-primary">Learn now!</button>
+        <button class="btn btn-primary">Ver!</button>
         </div>
     </div>
 </div>
-<br/><br/><br/><br/>
         </Link>
     )
     }

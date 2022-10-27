@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import ItemDetail from './components/ItemDetail';
 import { CartContextProvider } from './context/cartContext';
 import Footer from './components/Footer';
+import Inicio from './components/Inicio';
 
 function App() {
   return (
@@ -14,13 +15,16 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path='/' element={<ListContainer/>} />
+        <Route path='/' element={<Inicio/>} />
+          <Route path='/tienda' element={<ListContainer/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/detail/:id' element={<ItemDetail/>} />
         </Routes>
+        <br/><br/><br/><br/><br/>
         <Footer/>
       </BrowserRouter>
     </CartContextProvider>
+    
   );
 }
 

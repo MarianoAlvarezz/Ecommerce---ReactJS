@@ -1,20 +1,22 @@
-import React from 'react'
-import { useCart } from '../context/cartContext'
+import React, { useState } from 'react'
+import { useCart} from '../context/cartContext'
 
 const Cart = () => {
 
-    const {products, clearCart} = useCart()
+  const [total, setTotal] =  useState(0)
 
-    return (
-        <div className='center'>
-            <br/>
-            <div className='cart'>Carrito</div>
-            <br/>
-            { products.map( (p, i) => <li key={i}> {p.name}: <br/> {p.price}</li> ) }
-            <br/>
-            <button class="btn glass" onClick={clearCart}>Limpiar carrito</button>
+
+  
+    const {products, clearCart } = useCart() /* hacer un products.length */
+
+  return (
+    <div>
+        <div >Carrito</div>
+        {products.map((p, i) => <li key={i}>{p.name}</li>)}
+        <span className="text-info">Total: {total}</span>
+        <button className='btn' onClick={clearCart}>Limpiar Carrito</button>
         </div>
-    )
+  )
 }
 
 export default Cart

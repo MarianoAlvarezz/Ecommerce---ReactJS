@@ -24,7 +24,7 @@ code {
 /* ------------------------- Footer -------------------------------------- */
 
 .footer.p-10.bg-neutral.text-neutral-content{
-  margin-top: 370px;
+  margin-top: 350px;
   background: rgb(0,0,84);
   background: linear-gradient(90deg, rgba(0,0,84,0.6166841736694677) 36%, rgba(177,10,227,0.7847514005602241) 65%);
 }
@@ -37,7 +37,8 @@ code {
   width: 100%;
   text-align: center;
   margin-top: 100px;
-  width: 50%;
+  width: 30%;
+  height: 650px;
 }
 
 /* ------------------------- Botones -------------------------------------- */
@@ -77,6 +78,8 @@ code {
   margin: auto;
   width: 100%;
   text-align: center;
+  padding: 10px;
+  list-style: georgian;
 }
 
 
@@ -94,3 +97,12 @@ code {
   background: rgb(3,6,140);
   background: linear-gradient(90deg, rgba(3,6,140,0.36458333333333337) 36%, rgba(41,11,173,0.6502976190476191) 60%);
 }
+
+
+/* ------------------------- Scroll Carrito -------------------------------------- */
+
+.scroll{
+  overflow: auto;
+  width: 200px;
+  height: 490px;
+} 

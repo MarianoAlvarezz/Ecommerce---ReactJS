@@ -33,9 +33,14 @@ import { useCart } from '../context/cartContext'
             <br/><br/>
             <div className='name'>{product.name}</div>
             <br/>
-            <div className='price'>{product.price}</div>
+            <div className='price'>US$ {product.price}</div>
             <img className='imageDetail' src={product.img} height={200}/>
-            <div className='description'>{product.description}</div>
+            <div className='description'><li>{product.description1}</li></div>
+            <div className='description'><li>{product.description2}</li></div>
+            <div className='description'><li>{product.description3}</li></div>
+            <div className='description'><li>{product.description4}</li></div>
+            <div className='description'><li>{product.description5}</li></div>
+
             <br/><br/>
             <button class="btn glass" onClick={addHandler}>Agregar al carrito</button>
         </div>
