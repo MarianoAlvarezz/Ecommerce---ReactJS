@@ -6,12 +6,9 @@ const Inicio = () => {
   return (
 
     <>
-    <Carousel/>
     <br/><br/><br/><br/><br/>
-
     <Hero/>
     </>
-
   )
 }
 
