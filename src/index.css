@@ -24,7 +24,6 @@ code {
 /* ------------------------- Footer -------------------------------------- */
 
 .footer.p-10.bg-neutral.text-neutral-content{
-  margin-top: 350px;
   background: rgb(0,0,84);
   background: linear-gradient(90deg, rgba(0,0,84,0.6166841736694677) 36%, rgba(177,10,227,0.7847514005602241) 65%);
 }
@@ -46,6 +45,11 @@ code {
 .btn.glass{
   display: flex;
   margin: auto;
+}
+
+.btn.btn-primary{
+  background: rgb(81,3,140);
+  background: linear-gradient(90deg, rgba(81,3,140,0.6530987394957983) 33%, rgba(138,11,166,0.5158438375350141) 59%);
 }
 
 /* ------------------------- Texto -------------------------------------- */
@@ -90,12 +94,19 @@ code {
   text-align: center; 
 }
 
-/* ------------------------- NavBhar -------------------------------------- */
+.imagenLogo{
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+/* ------------------------- NavBar -------------------------------------- */
 
 
 .navbar.bg-base-100{
   background: rgb(3,6,140);
-  background: linear-gradient(90deg, rgba(3,6,140,0.36458333333333337) 36%, rgba(41,11,173,0.6502976190476191) 60%);
+  background: linear-gradient(90deg, rgba(3,6,140,0.4514180672268907) 45%, rgba(11,161,166,0.3477766106442577) 59%);
+  height: 100px;
 }
 
 
@@ -103,6 +114,12 @@ code {
 
 .scroll{
   overflow: auto;
-  width: 200px;
   height: 490px;
 } 
+
+/* ------------------------- Contenedores -------------------------------------- */
+
+.hero.min-h-screen.bg-base-200{
+  background: rgb(0,0,84);
+  background: linear-gradient(90deg, rgba(0,0,84,0.6166841736694677) 36%, rgba(177,10,227,0.7847514005602241) 65%);
+}

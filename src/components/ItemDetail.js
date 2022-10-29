@@ -43,6 +43,7 @@ import { useCart } from '../context/cartContext'
 
             <br/><br/>
             <button class="btn glass" onClick={addHandler}>Agregar al carrito</button>
+            <br/><br/>
         </div>
     )
 }
